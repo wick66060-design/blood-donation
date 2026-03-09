@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Awareness - Ethiopia | Home</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <i class="fa-solid fa-droplet blood-drop-icon"></i>
+            <h2>LifeDrop ET</h2>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <p>Gathering Hope...</p>
+        </div>
+    </div>
+    <!-- Hide preloader if already shown in this session -->
+    <script>
+        if (sessionStorage.getItem('preloaderShown')) {
+            document.getElementById('preloader').style.display = 'none';
+        }
+    </script>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-droplet px-1"></i> LifeDrop ET
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="why-donate.html">Why Donate</a></li>
+                    <li><a href="how-to-donate.html">How to Donate</a></li>
+                    <li><a href="myths-facts.html">Myths</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="get-involved.html" class="btn btn-primary nav-btn">Get Involved</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-menu" class="hamburger" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with 3D Background -->
+    <section class="hero" style="position: relative;">
+        <!-- 3D Canvas Container -->
+        <div id="hero-3d-canvas"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+        </div>
+
+        <div class="container hero-content fade-in parallax-element" data-speed="0.2"
+            style="position: relative; z-index: 1; background: rgba(255,255,255,0.4); backdrop-filter: blur(4px); padding: 3rem; border-radius: 20px;">
+            <h1 class="slide-in-left delay-1">Give Blood, Give Hope <br><span class="text-primary">Save Lives in
+                    Ethiopia</span></h1>
+            <p class="fade-in delay-2"
+                style="color: var(--text-main); font-weight: 600; text-shadow: 0 0 5px rgba(255,255,255,0.8);">One
+                single
+                donation can save up to 3 lives. Ethiopia needs more voluntary donors to meet the daily healthcare
+                demands. Join the movement and be a hero today.</p>
+            <div class="hero-btns fade-in delay-3">
+                <a href="get-involved.html" class="btn btn-primary">Donate Now</a>
+                <a href="about.html" class="btn btn-outline" style="background: rgba(255,255,255,0.8);">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section fade-in">
+        <div class="container">
+            <div class="text-center mb-2">
+                <h2>The Current Reality</h2>
+                <p class="text-muted">Understanding the vital need for blood in Ethiopia</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <i class="fa-solid fa-bed-pulse"></i>
+                    <h3>18,000</h3>
+                    <p>Daily requested units of blood across Ethiopian healthcare facilities.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-chart-line text-accent"></i>
+                    <h3>26%</h3>
+                    <p>Current rate of completely voluntary donations. (74% are still replacement donations).</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>3 Lives</h3>
+                    <p>The number of people you can save with a single 450ml blood donation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: Upcoming Blood Drives -->
+    <section class="section fade-in"
+        style="background-color: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="text-center mb-2">
+                <h2>Upcoming Blood Drives in Addis</h2>
+                <p class="text-muted">Find a mobile donation center near you this week and make a direct impact.</p>
+            </div>
+            <div class="grid">
+                <div class="card slide-in-left delay-1" style="border-top: 4px solid var(--primary);">
+                    <h4 style="color: var(--primary);">Addis Ababa University</h4>
+                    <p><i class="fa-regular fa-calendar"
+                            style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0;"></i> This Fri - Sun</p>
+                    <p><i class="fa-solid fa-location-dot"
+                            style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0;"></i> Main Campus, 4
+                        Kilo</p>
+                </div>
+                <div class="card fade-in delay-2" style="border-top: 4px solid var(--accent);">
+                    <h4 style="color: var(--accent);">Meskel Square</h4>
+                    <p><i class="fa-regular fa-calendar"
+                            style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0;"></i> Next Mon - Wed</p>
+                    <p><i class="fa-solid fa-location-dot"
+                            style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0;"></i> Mobile Van,
+                        Exhibition Center</p>
+                </div>
+                <div class="card slide-in-right delay-3" style="border-top: 4px solid var(--primary);">
+                    <h4 style="color: var(--primary);">Bole Medhanealem</h4>
+                    <p><i class="fa-regular fa-calendar"
+                            style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0;"></i> Every Weekend</p>
+                    <p><i class="fa-solid fa-location-dot"
+                            style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0;"></i> Church Compound
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background-color: var(--primary); color: white;">
+        <div class="container text-center fade-in">
+            <h2 style="color: white;">Ready to Make a Difference?</h2>
+            <p style="color: rgba(255,255,255,0.9);">Join thousands of Ethiopians urban youth leading the charge for
+                voluntary blood donation.</p>
+            <a href="get-involved.html" class="btn"
+                style="background-color: white; color: var(--primary); margin-top: 1rem;">Register as a Donor</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo mb-2"><i class="fa-solid fa-droplet"></i> LifeDrop ET</a>
+                <p class="text-muted">Raising awareness for voluntary blood donation across Ethiopia. Let's build a
+                    healthier nation together.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Blood Donation</a></li>
+                    <li><a href="how-to-donate.html">How to Donate</a></li>
+                    <li><a href="myths-facts.html">Myths vs Facts</a></li>
+                    <li><a href="get-involved.html">Register Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Addis Ababa, Ethiopia</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@lifedropet.org</li>
+                    <li><i class="fa-solid fa-phone"></i> +251 112 345 678</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LifeDrop Ethiopia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- Preloader Logic -->
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            if (sessionStorage.getItem('preloaderShown')) {
+                preloader.style.display = 'none';
+            } else {
+                // Ensure minimum display time of 2.5 seconds for the animation to play out
+                // Alternatively, wait until 3D assets are loaded
+                setTimeout(() => {
+                    preloader.classList.add('hidden');
+                    // Remove from DOM after fade out transition completes
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                        sessionStorage.setItem('preloaderShown', 'true');
+                    }, 500);
+                }, 2500);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | LifeDrop Ethiopia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-droplet px-1"></i> LifeDrop ET</a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="why-donate.html">Why Donate</a></li>
+                    <li><a href="how-to-donate.html">How to Donate</a></li>
+                    <li><a href="myths-facts.html">Myths</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="get-involved.html" class="btn btn-primary nav-btn active-link">Get Involved</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <button id="mobile-menu" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px; min-height: 80vh;">
+        <section class="section">
+            <div class="container fade-in">
+                <h1 class="text-center">Register to Donate</h1>
+                <p class="text-center text-muted mb-2">Join Ethiopia's voluntary donor registry today.</p>
+
+                <div class="form-container">
+                    <form id="get-involved-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Abebe Kebede" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" placeholder="abebe@example.com"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+251 911 234 567">
+                        </div>
+                        <div class="form-group">
+                            <label for="blood-group">Blood Group</label>
+                            <select id="blood-group" class="form-control">
+                                <option value="" disabled selected>Select Blood Group (if known)</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="Unknown">I don't know</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City / Region</label>
+                            <input type="text" id="city" class="form-control" placeholder="Addis Ababa"
+                                value="Addis Ababa">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Registration</button>
+                    </form>
+                </div>
+
+                <div class="mt-2" style="max-width: 600px; margin: 3rem auto 0;">
+                    <h3 class="text-center mb-2">Frequently Asked Questions</h3>
+                    <div class="accordions-container">
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                How often can I donate blood? <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Men can donate every 3 months (90 days) and women every 4 months (120 days).</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-header">
+                                Can I bring friends or organize a drive? <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Absolutely! The National Blood Bank highly encourages groups, university clubs, and
+                                    companies to organize local blood drives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LifeDrop Ethiopia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

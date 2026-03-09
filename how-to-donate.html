@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Donate | LifeDrop Ethiopia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Three.js for 3D Characters -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-droplet px-1"></i> LifeDrop ET</a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="why-donate.html">Why Donate</a></li>
+                    <li><a href="how-to-donate.html">How to Donate</a></li>
+                    <li><a href="myths-facts.html">Myths</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="get-involved.html" class="btn btn-primary nav-btn">Get Involved</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <button id="mobile-menu" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px; min-height: 80vh;">
+        <section class="section">
+            <div class="container fade-in">
+                <h1 class="text-center">How to Donate Blood</h1>
+                <p class="text-center text-muted mb-2">The process is simple, safe, and takes very little time.</p>
+
+                <div class="timeline mb-2">
+                    <!-- Step 1 -->
+                    <div class="timeline-item slide-in-left delay-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper"
+                            onclick="this.querySelector('.timeline-content').classList.toggle('flipped')">
+                            <div class="timeline-content">
+                                <div class="timeline-front">
+                                    <h3><span class="step-badge">1</span> Check Eligibility</h3>
+                                    <p>Age 18-65, weight >50kg, and generally in good health. Must not have donated in
+                                        the last 3 months (men) or 4 months (women). Click to see more.</p>
+                                </div>
+                                <div class="timeline-back">
+                                    <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Doctor checking eligibility" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-canvas-wrapper">
+                            <span class="drag-hint"><i class="fa-solid fa-hand-pointer"></i> Drag to rotate</span>
+                            <div class="character-canvas" id="step1-canvas"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-item slide-in-right delay-2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper"
+                            onclick="this.querySelector('.timeline-content').classList.toggle('flipped')">
+                            <div class="timeline-content">
+                                <div class="timeline-front">
+                                    <h3><span class="step-badge">2</span> Register</h3>
+                                    <p>Fill out a short questionnaire regarding your health history and travel to ensure
+                                        safety for both you and the recipient. Click to reveal.</p>
+                                </div>
+                                <div class="timeline-back">
+                                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Patient filling medical forms" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-canvas-wrapper">
+                            <span class="drag-hint"><i class="fa-solid fa-hand-pointer"></i> Drag to rotate</span>
+                            <div class="character-canvas" id="step2-canvas"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-item slide-in-left delay-3">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper"
+                            onclick="this.querySelector('.timeline-content').classList.toggle('flipped')">
+                            <div class="timeline-content">
+                                <div class="timeline-front">
+                                    <h3><span class="step-badge">3</span> Screening</h3>
+                                    <p>A quick health check including pulse, blood pressure, temperature, and a tiny
+                                        finger prick for iron levels. Click for details.</p>
+                                </div>
+                                <div class="timeline-back">
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Nurse measuring blood pressure" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-canvas-wrapper">
+                            <span class="drag-hint"><i class="fa-solid fa-hand-pointer"></i> Drag to rotate</span>
+                            <div class="character-canvas" id="step3-canvas"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-item slide-in-right delay-4">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper"
+                            onclick="this.querySelector('.timeline-content').classList.toggle('flipped')">
+                            <div class="timeline-content">
+                                <div class="timeline-front">
+                                    <h3><span class="step-badge">4</span> Donate</h3>
+                                    <p>The actual donation takes about 8-10 minutes. You can relax, listen to music, or
+                                        talk with the staff. Click to see the process.</p>
+                                </div>
+                                <div class="timeline-back">
+                                    <img src="https://images.unsplash.com/photo-1615461102927-4623eb6fb083?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Plasma and blood donation bags in a clinic" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-canvas-wrapper">
+                            <span class="drag-hint"><i class="fa-solid fa-hand-pointer"></i> Drag to rotate</span>
+                            <div class="character-canvas" id="step4-canvas"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-item slide-in-left delay-4">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper"
+                            onclick="this.querySelector('.timeline-content').classList.toggle('flipped')">
+                            <div class="timeline-content">
+                                <div class="timeline-front">
+                                    <h3><span class="step-badge">5</span> Recover</h3>
+                                    <p>Rest for 10-15 minutes while enjoying complimentary juice and biscuits before
+                                        leaving the center. Click for post-care.</p>
+                                </div>
+                                <div class="timeline-back">
+                                    <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                        alt="Healthy juice and snacks for recovery" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-canvas-wrapper">
+                            <span class="drag-hint"><i class="fa-solid fa-hand-pointer"></i> Drag to rotate</span>
+                            <div class="character-canvas" id="step5-canvas"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-2"
+                    style="background: var(--bg-card); padding: 3rem; border-radius: 16px; border: 1px solid var(--border-color);">
+                    <h2 class="text-primary">Where to Donate?</h2>
+                    <p style="max-width: 600px; margin: 0 auto 1.5rem;">
+                        Visit the National Blood Bank Service headquarters near Stadium, or check for our mobile blood
+                        donation trucks operating daily in major plazas around Addis Ababa.
+                    </p>
+                    <a href="get-involved.html" class="btn btn-outline">Register Interest Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LifeDrop Ethiopia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

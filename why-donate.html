@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Donate | LifeDrop Ethiopia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-droplet px-1"></i> LifeDrop ET</a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="why-donate.html">Why Donate</a></li>
+                    <li><a href="how-to-donate.html">How to Donate</a></li>
+                    <li><a href="myths-facts.html">Myths</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="get-involved.html" class="btn btn-primary nav-btn">Get Involved</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <button id="mobile-menu" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main style="padding-top: 100px; min-height: 80vh;">
+        <section class="section">
+            <div class="container fade-in">
+                <h1 class="text-center">Why Donate Blood?</h1>
+                <p class="text-center text-muted mb-2">It's a small act that makes a massive impact. Here is why you
+                    should consider donating today.</p>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2>The Unseen Benefits</h2>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;"><i
+                                    class="fa-solid fa-stethoscope text-primary" style="font-size: 1.5rem;"></i>
+                                <div><strong>Free Health Checkup:</strong> Before donating, you get a mini physical
+                                    checkup including pulse, blood pressure, body temperature, and hemoglobin levels.
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;"><i
+                                    class="fa-solid fa-heart-pulse text-primary" style="font-size: 1.5rem;"></i>
+                                <div><strong>Cardiovascular Health:</strong> Regular blood donation helps lower iron
+                                    levels in the blood, which may reduce the risk of heart disease.</div>
+                            </li>
+                            <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;"><i
+                                    class="fa-solid fa-face-smile text-primary" style="font-size: 1.5rem;"></i>
+                                <div><strong>Mental Wellbeing:</strong> Knowing you have actively saved lives boosts
+                                    your mental health and gives a sense of community responsibility.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        style="flex: 1; min-width: 300px; background: var(--bg-card); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-color); text-align: center;">
+                        <h3>Ethiopia Donation Stats</h3>
+                        <p class="text-muted" style="margin-bottom: 1rem;">Goal: Shift from Replacement to 100%
+                            Voluntary</p>
+                        <div class="chart-container">
+                            <canvas id="donationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="how-to-donate.html" class="btn btn-primary">See How It Works</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LifeDrop Ethiopia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
